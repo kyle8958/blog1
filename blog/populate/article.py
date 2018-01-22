@@ -2,7 +2,7 @@ from populate import base
 from article.models import Article, Comment
 from django.contrib.auth.models import User
 
-titles = ['如何像電腦科學家一樣思考', '10分鐘內學好Python', '簡單學習Django']
+titles = ['如何像電腦科學家一樣思考', '10分鐘內學好Python', '簡單學習Django','第四篇','第五篇']
 comments = ['文章真棒', '並不認同您的觀點', '借分享', '學好一個程式語言或框架並不容易']
 
 
