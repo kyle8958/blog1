@@ -27,7 +27,7 @@
         </li>
         <li id="card-2">
           <h3>Card 2</h3>
-          <a href="#">
+          <a href="{% url 'article:articleRead' 2 %}">
           <img src="{% static 'main/img/a2.jpg' %}" height="130" width="130" alt="Fox"></a>
           <p>Name: Fox
           <br>
@@ -39,7 +39,7 @@
           </li>
         <li id="card-3">
           <h3>Card 3</h3>
-          <a href="#">
+          <a href="{% url 'article:articleRead' 3 %}">
           <img src="{% static 'main/img/a3.png' %}" height="130" width="130" alt="Dog"></a>
           <p>Name: Dog
           <br>
