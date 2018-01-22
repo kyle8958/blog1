@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+  <head>
+    <title>部落格</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+  </head>
+  <body>
+  <header class="top-logo">
+  <div class="top">
+    <a><img src="{% static 'main/img/literary.jpg' %}" alt="literary" class="literary"></a>
+    <ul id="menu">
+      <li><a href="{% url 'main:main' %}">HOME</a></li>
+      <li><a href="{% url 'main:products' %}">Products</a></li>
+      <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+      <li><a href="{% url 'article:article' %}">FEEDBACK</a></li>
+      {% if user.is_authenticated %}
+      <li><a href="{% url 'account:logout' %}">LOG OUT ({{ user.username }})</a></li>
+      {% else %}
+      <li><a href="{% url 'account:register' %}">SIGN IN</a></li>
+      <li><a href="{% url 'account:login' %}">LOG IN</a></li>
+      {% endif %}
+    </ul>
+  </div>
+  </header>
+  </body>
+</html>

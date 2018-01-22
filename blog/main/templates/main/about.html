@@ -1,0 +1,80 @@
+{% load staticfiles %}
+<!doctype html>
+<html style="overflow: auto;">
+  <head>
+    <title>部落格</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+  </head>
+  <body>
+  <header class="g-header">
+  <h1 class="g-logo">
+  <span class="sr-only"></span>
+  <a href="{% url 'main:main' %}">
+  <img src="{% static 'main/img/literary.jpg' %}" alt="literary" class="img-max">
+  </a>
+  </h1>
+  <div class="g-lang">
+  <a href="#" class="active">
+  <span>TW</span>
+  </a>
+  <a href="#">
+  <span>EN</span>
+  </a>
+  </div>
+<nav class="g-nav-wrap">
+    <h2 class="sr-only">勤富帽業商行主選單</h2>
+    <ul class="g-nav ulset clearfix">
+      <li><a href="{% url 'main:main' %}" title="首頁" class="nav-link">首頁</a></li>
+      <li><a href="#" title="最新消息" class="nav-link">最新消息</a></li>
+      <li><a href="{% url 'main:products' %}" title="產品介紹" class="nav-link">產品介紹</a></li>
+      <li><a href="#" title="聯絡我們" class="nav-link">聯絡我們</a></li>
+    </ul>
+  </nav> 
+  </header>
+  
+  <div class="head-all">
+  
+  <div class="pic">
+  <img src="{% static 'main/img/background1.jpg' %}" alt="about us">
+  </div>
+  
+  <div class="middle-wrap">
+  <h2 class="p-text">
+  <span class="english">ABOUT US</span>
+  <span class="english1">作品集</span>
+  </h2>
+  </div>
+  
+  </div>
+  
+
+  <div class="middle-wrap">
+   <div class="no-data">資料建構中...</div>
+    </div>
+    
+    
+    <footer class="final">
+    <div class="middle-wrap">
+    <div class="final-left">
+    <div class="g-footer-info">
+    Copyright&nbsp;©&nbsp;CHINFU&nbsp;All&nbsp;Rights&nbsp;Reserved.&nbsp;高雄市三民區壽昌路116號.
+    </div>
+    <div class="g-footer-nav">
+    <a href="#">網站地圖</a>  
+    <a href="#">聯絡我們</a>
+    </div>
+    <div class="gi-media-btn">
+    <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="True"></i></a>
+    <a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="True"></i></a>
+    </div>
+    </div>
+    
+    <div class="g-grent g-footer-right">
+    <a href="{% url 'main:main' %}">Design by grent</a>
+    </div>
+    </div>
+    </footer>
+
+  </body>
+</html>
