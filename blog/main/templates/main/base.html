@@ -4,17 +4,30 @@
   <head>
     <title>部落格</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="/static/main/css/main.css">
     {% block css %}{% endblock %}
   </head>
   <body>
     {% include 'main/menu.html' %}
-    <div class="middle">
+    <div class="cBody">
+    
     <h2>{% block heading %}{% endblock %}</h2>
+
     {% include 'main/messages.html' %}
     {% block content %}{% endblock %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    {% block script %}{% endblock %}
+    {% block script %}{% endblock %}</div>
+    <div class="cFooter">
+    <div class="bottom">
+            <ul>
+              </ul>
+    </div>
+    <div class="content">
+             版權所有 2018 © All rights reserved
+    </div>
+    <div class="author">
+      <a title="網頁設計" href="http://nim.com.tw" target="_blank">網頁設計</a> by：kyle<a title="網頁設計公司" href="http://nim.com.tw" target="_blank">網頁設計公司</a>
+    </div>
     </div>
   </body>
 </html>

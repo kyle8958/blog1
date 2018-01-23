@@ -1,48 +1,165 @@
-html, body {
-  margin: 0;
-  height: 100%;
+body{
+    color: rgb(0, 0, 0);
+    font: 12px Arial, 細明體;
+    text-align: left;
+    margin: 30px 0px;
 }
 
-body {
-    background: url(../img/background.jpg);
-    margin: 0;
-    padding: 0;
+
+.cHead {
+    background: url("../img/backs.jpg");
+    background-position-y:-200px;
+    background-position-x:-10px;
+    margin: 0px auto;
+    border-top: 2px solid #228181;
+    height:150px;
+    width:900px;
 }
 
-ul#menu {
-   margin-bottom: 30px;
-   text-align: right;
-}
-.literary{
-	 width:120px;
-	 height:100px;
+
+.cHead .left {
+    float: left;
+    width: 284px;
+    height:150px;
 }
 
-ul#menu li {
-   display: inline-block;
+
+.cHead .slogan {
+    color: #197979;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    margin: 48px 0px 0px 80px;
 }
 
-ul#menu li a{
-	 margin-left:30px;
-   text-align:center;
-   font-size: 1em;
-   font-weight:bold;
-   padding:0.7em 0.3em;
-	 text-decoration:none;
+
+.cHead .logo {
+    position: absolute;
+    cursor: pointer;
+
+    margin: 5px 0 0 10px;
+    z-index: 1;
 }
 
-ul{
-    margin-top: 60px;
+
+.img-max{
+	  width: 150px;
+    height: 100px;
+	
 }
 
-.top{
-  width: 960px;
-  margin: 0 auto;
-  padding-top:100px;
+.cHead .right {
+    float: left;
+    height: 150px;
+    width: 100px;
+    margin-top:20px;
 }
-.middle{
-	width:
+
+
+.cHead .top {
+    color: #666666;
+    text-align: right;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 616px;
+    height: 20px;
+    top: 10px;
 }
+
+
+.cHead .main {
+    position: absolute;
+    width: 620px;
+    top: 50px;
+}
+
+
+.cHead .menu {
+    background: #FFFFFF;
+    z-index: 1;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+
+.cHead .menu li a:hover {
+    color: red;
+}
+
+.cHead .menu li {
+	  font-size:15px;
+    display: block;
+    list-style: none;
+    margin: 0px;
+    padding-top: 50px;
+    float: left;
+    
+}
+
+
+.cHead .menu li a{
+	  text-decoration: none;
+	  margin-left:15px;
+}
+
+img {
+    border: 0;
+}
+
+
+.cBody {
+    background: #ffffff;
+    margin: 0px auto;
+    padding: 0px 10px 10px;
+    border-bottom: 2px solid #228181;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.no-data {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #666;
+}
+
+.cFooter {
+	  background:linear-gradient(rgba(0,0,0,0.65),white);
+    color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    margin: 5px auto 0px;
+    width: 900px;
+}
+
+
+.cFooter .bottom {
+    font-weight: bold;
+    padding-top: 10px;
+    height: 10px;
+    
+    background-color:gray;
+}
+
+.cFooter .content {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+
+.cFooter .author {
+    color: #666666;
+    font-size: 11px;
+    padding: 10px 0;
+}
+
 /* Button */
 .btn {
 	font-family: Arial;
